@@ -97,7 +97,7 @@ public class ChessMatch {
 			capturedPieces.add(capturedPiece);
 		}
 
-		// specialmove rock pequeno
+		// specialmove roque pequeno
 		if (p instanceof King && target.getColumn() == source.getColumn() + 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() + 3);
 			Position targetT = new Position(source.getRow(), source.getColumn() + 1);
@@ -106,7 +106,7 @@ public class ChessMatch {
 			rook.increaseMoveCount();
 		}
 
-		// specialmove rock grande
+		// specialmove roque grande
 		if (p instanceof King && target.getColumn() == source.getColumn() - 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() - 4);
 			Position targetT = new Position(source.getRow(), source.getColumn() - 1);
@@ -129,7 +129,7 @@ public class ChessMatch {
 			piecesOnTheBoard.add(capturedPiece);
 		}
 
-		// specialmove rock pequeno
+		// specialmove roque pequeno
 		if (p instanceof King && target.getColumn() == source.getColumn() + 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() + 3);
 			Position targetT = new Position(source.getRow(), source.getColumn() + 1);
@@ -138,7 +138,7 @@ public class ChessMatch {
 			rook.decreaseMoveCount();
 		}
 
-		// specialmove rock grande
+		// specialmove roque grande
 		if (p instanceof King && target.getColumn() == source.getColumn() - 2) {
 			Position sourceT = new Position(source.getRow(), source.getColumn() - 4);
 			Position targetT = new Position(source.getRow(), source.getColumn() - 1);

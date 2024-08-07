@@ -86,7 +86,7 @@ public class King extends ChessPiece {
 		
 		//specialmove castling
 		if(getMoveCount() == 0 && !chessMatch.getCheck()) {
-			//specialmove rock pequeno
+			//specialmove roque pequeno
 			Position posT1 = new Position(position.getRow(), position.getColumn()+ 3 );
 			if(testRookCastling(posT1)) {
 				Position p1 = new Position(position.getRow(), position.getColumn() + 1);
@@ -95,7 +95,7 @@ public class King extends ChessPiece {
 					mat[position.getRow()][position.getColumn()+ 2 ] = true;
 				}
 			}
-			//specialmove rock grande
+			//specialmove roque grande
 			Position posT2 = new Position(position.getRow(), position.getColumn()- 4 );
 			if(testRookCastling(posT2)) {
 				Position p1 = new Position(position.getRow(), position.getColumn() - 1);
